@@ -1,0 +1,33 @@
+.tiktoks-container-view{
+    width: 100vw;
+    margin: 0 auto;
+    overflow: hidden;
+}
+@media(max-width: 1000px){
+    .tiktoks-container-view{
+        height: 100vh;
+        overflow-y: hidden;
+    }
+}
+
+.tiktoks-container{
+    min-width: 540px;
+    max-width: 100vw;
+    min-height: 960px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.tiktok-video{
+    width: 540px;
+    height: 960px;
+    position: relative;
+
+}
+
+.tiktok-video > video{
+    width: 100vw;
+    
+}
