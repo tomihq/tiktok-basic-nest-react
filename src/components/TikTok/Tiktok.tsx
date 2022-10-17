@@ -13,7 +13,6 @@ export const Tiktok = () => {
   const items:Video[] = useItems(data);
 
  
-
   useEffect(() => {
     async function fetchVideoAmounts(){
       const fetchData = await fetch("http://localhost:8080/video/amountVideos")
@@ -38,8 +37,6 @@ export const Tiktok = () => {
   const prevVideo = () =>{
     index>0 && setIndex(index - 1)
   }
-
-  
 
   return (
     <div>
